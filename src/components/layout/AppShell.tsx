@@ -79,7 +79,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex h-screen flex-col overflow-hidden bg-shell-bg">
       <Topbar
-        logo={<img src="/pai-logo.svg" alt="Prevalent AI" className="h-[26px] w-auto" />}
+        logo={<img src={`${import.meta.env.BASE_URL}pai-logo.svg`} alt="Prevalent AI" className="h-[26px] w-auto" />}
         onLogoClick={() => navigate('/')}
         navCollapsed={collapsed}
         onToggleNavCollapse={() => setCollapsed((c) => !c)}
