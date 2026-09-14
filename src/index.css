@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --shell-bg: #f7f9fc;
+  --shell-border: #e6e6e6;
+  --shell-text: #101010;
+  --shell-text-2: #282828;
+  --shell-text-muted: #6e6e6e;
+  --shell-accent: #6360d8;
+  --shell-hover: rgba(0, 0, 0, 0.04);
+  --shell-active: rgba(99, 96, 216, 0.08);
+  --shell-raised: #f5f5f5;
+  --shell-elevated: #ebebeb;
+  --ctrl-bg: #ffffff;
+  --ctrl-border: #cfcfcf;
+  --ctrl-placeholder: #9ca3af;
+  --card-bg: #ffffff;
+  --card-border: #e6e6e6;
+  --table-th-bg: #f5f5f5;
+  --table-border: #e6e6e6;
+  --shell-topbar-bg: #131313;
+  --shell-topbar-text: #d1d1d1;
+  --shell-critical: #d12329;
+}
+
+.dark {
+  --shell-bg: #0a0a0d;
+  --shell-border: #2c2d34;
+  --shell-text: #f6f6f9;
+  --shell-text-2: #c7c9d2;
+  --shell-text-muted: #8b8d98;
+  --shell-accent: #8481ea;
+  --shell-hover: rgba(255, 255, 255, 0.06);
+  --shell-active: rgba(132, 129, 234, 0.16);
+  --shell-raised: #17181d;
+  --shell-elevated: #202129;
+  --ctrl-bg: #17181d;
+  --ctrl-border: #3a3b45;
+  --ctrl-placeholder: #75767f;
+  --card-bg: #121318;
+  --card-border: #292a31;
+  --table-th-bg: #16171c;
+  --table-border: #24252c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--shell-bg);
+  color: var(--shell-text);
+  font-size: 12px;
+  line-height: 1.5;
+}
